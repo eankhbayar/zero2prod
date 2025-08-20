@@ -10,6 +10,5 @@ async fn main() -> Result<(), std::io::Error> {
     let address = format!("0.0.0.0:{}", configuration.application_port);
 
     let listener = TcpListener::bind(&address)?;
-
     run(listener)?.await
 }
